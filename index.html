@@ -36,21 +36,19 @@
         await OneSignal.init({
           appId: "224db4ea-d943-40d3-ac5e-b072a35a327e",
         });
+
+        OneSignal.Notifications.addEventListener("foregroundWillDisplay", function(event) {
+          console.log("Notification about to display:", event.notification);
+
+          // Option A: suppress the default notification and show your own in-page UI
+          //event.preventDefault();
+          //showMyInAppBanner(event.notification);
+
+          localStorage.setItem("notification", JSON.stringify(event.notification));
+
+          // Option B: do nothing and let OneSignal display it normally
+        });
       });
-    </script>
-
-    <script>
-      OneSignal.Notifications.addEventListener("foregroundWillDisplay", function(event) {
-      console.log("Notification about to display:", event.notification);
-
-      // Option A: suppress the default notification and show your own in-page UI
-      //event.preventDefault();
-      //showMyInAppBanner(event.notification);
-
-      localStorage.setItem("notification", JSON.stringify(event.notification));
-
-      // Option B: do nothing and let OneSignal display it normally
-    });
     </script>
   </head>
   <body>
