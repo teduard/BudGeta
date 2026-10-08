@@ -28,6 +28,16 @@
     <meta name="theme-color" content="#1f2937" />
 
     <title>BudGeta</title>
+
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
+          appId: "224db4ea-d943-40d3-ac5e-b072a35a327e",
+        });
+      });
+    </script>
   </head>
   <body>
     <style>
