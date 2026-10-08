@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 import type { VitePWAOptions } from "vite-plugin-pwa";
 
-const base = "/OmniCare/";
-const name = "OmniCare";
+const base = "/BudGeta/";
+const name = "BudGeta";
 
 const pwaOptions: Partial<VitePWAOptions> = {
   mode: "development",

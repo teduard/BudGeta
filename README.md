@@ -1,11 +1,11 @@
-# OmniCare
+# BudGeta
 
 A privacy-first personal finance and productivity platform that runs entirely
 in your browser - no account required, no data ever leaves your device.
 
 <img src="public/assets/preview.png">
 
-**[Live Demo](https://teduard.github.io/OmniCare)**
+**[Live Demo](https://teduard.github.io/BudGeta)**
 
 > **Note:** The live demo is pre-loaded with seed data so every feature is
 > immediately explorable without signing up or entering real information.
@@ -39,7 +39,7 @@ connection after the first load.
 ## Local-First approach
 
 Most personal finance apps require an account and store data on a server.
-OmniCare takes the opposite direction: the data lives in your
+BudGeta takes the opposite direction: the data lives in your
 browser, and the app is fully functional with no network access after install.
 
 This is made possible by running a real SQLite database in the browser via
@@ -140,7 +140,7 @@ npm install
 npm run dev
 ```
 
-The app runs at `http://localhost:5173/OmniCare/` (or on first available port) and initialises with seed
+The app runs at `http://localhost:5173/BudGeta/` (or on first available port) and initialises with seed
 data on first load. No environment variables or external services required.
 
 ---
